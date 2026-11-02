@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronDown, LogOut, User } from 'lucide-react';
 
-const BASE_URL = 'http://localhost:4000/api';
+const BASE_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
 const Navbar = ({ user: propUser, onLogout }) => {
   const navigate = useNavigate();

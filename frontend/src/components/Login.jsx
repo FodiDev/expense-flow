@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail, User } from 'lucide-react';
 
-const API_URL = 'http://localhost:4000/api';
+const API_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
 const Login = () => {
   const [email, setEmail] = useState('');

@@ -16,7 +16,7 @@ import Expense from './pages/Expense';
 import Profile from './pages/Profile';
 import { useEffect } from 'react';
 
-const API_URL = 'http://localhost:4000/api';
+const API_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
 // Get transactions from local storage
 const getTransactionsFromStorage = () => {
