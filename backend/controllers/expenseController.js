@@ -1,5 +1,5 @@
 import expenseModel from '../models/expenseModel.js';
-import getDateRange from '../utils/datafilter.js';
+import getDateRange from '../utils/dataFilter.js';
 import XLSX from 'xlsx';
 
 // Add Expense
