@@ -57,7 +57,7 @@ export async function getDashboardOverview(req, res) {
 
     return res.status(200).json({
       success: true,
-      date: {
+      data: {
         monthlyIncome,
         monthlyExpense,
         savings,
