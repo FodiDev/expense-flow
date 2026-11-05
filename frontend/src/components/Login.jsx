@@ -7,7 +7,7 @@ import { Eye, EyeOff, Lock, Mail, User } from 'lucide-react';
 
 const API_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
-const Login = () => {
+const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -27,6 +27,9 @@ const Login = () => {
         Authorization: `Bearer ${token}`,
       },
     });
+
+    return response.data.user ?? response.data;
+
     const persistAuth = (profile, token) => {
       const storage = rememberMe ? localStorage : sessionStorage;
       try {
