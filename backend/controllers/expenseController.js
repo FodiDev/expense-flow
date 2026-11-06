@@ -28,11 +28,11 @@ export async function addExpense(req, res) {
       message: 'Expense added successfully.',
     });
   } catch (error) {
-    console.log('Add income error:', error);
+    console.log('Add expense error:', error);
 
     return res.status(500).json({
       success: false,
-      message: 'Server error while adding income.',
+      message: 'Server error while adding expense.',
     });
   }
 }

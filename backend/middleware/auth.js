@@ -14,6 +14,7 @@ export default async function authMiddleware(req, res, next) {
   }
   const token = authHeader.split(' ')[1];
 
+  // To verify the token
   try {
     const payload = jwt.verify(token, JWT_SECRET);
     const user = await User.findById(payload.id).select('-password');
