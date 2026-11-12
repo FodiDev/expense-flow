@@ -5,9 +5,10 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail, User } from 'lucide-react';
 
-const API_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
-
-const Login = ({ onLogin }) => {
+const Login = ({
+  API_URL = 'https://expense-flow-backend-8jp9.onrender.com/api',
+  onLogin,
+}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -59,7 +60,7 @@ const Login = ({ onLogin }) => {
         );
 
         const data = response.data || {};
-        const token = data.token;
+        const token = data.token || null;
 
         // To retrieve your profile
         let profile = data.user ?? null;

@@ -225,50 +225,51 @@ const App = () => {
               />
             </ProtectedRoute>
           }
-        />
-        <Route
-          path="/"
-          element={<Dashboard />}
-          transactions={transactions}
-          addTransaction={addTransaction}
-          editTransaction={editTransaction}
-          deleteTransaction={deleteTransaction}
-          refreshTransactions={refreshTransactions}
-        />
-        <Route
-          path="/income"
-          element={
-            <Income
-              transactions={transactions}
-              addTransaction={addTransaction}
-              editTransaction={editTransaction}
-              deleteTransaction={deleteTransaction}
-              refreshTransactions={refreshTransactions}
-            />
-          }
-        />
-        <Route
-          path="/expense"
-          element={
-            <Expense
-              transactions={transactions}
-              addTransaction={addTransaction}
-              editTransaction={editTransaction}
-              deleteTransaction={deleteTransaction}
-              refreshTransactions={refreshTransactions}
-            />
-          }
-        />
-        <Route
-          path="/profile"
-          element={
-            <Profile
-              user={user}
-              onUpdateProfile={updateUserData}
-              onLogout={handleLogout}
-            />
-          }
-        />
+        >
+          <Route
+            path="/"
+            element={<Dashboard />}
+            transactions={transactions}
+            addTransaction={addTransaction}
+            editTransaction={editTransaction}
+            deleteTransaction={deleteTransaction}
+            refreshTransactions={refreshTransactions}
+          />
+          <Route
+            path="/income"
+            element={
+              <Income
+                transactions={transactions}
+                addTransaction={addTransaction}
+                editTransaction={editTransaction}
+                deleteTransaction={deleteTransaction}
+                refreshTransactions={refreshTransactions}
+              />
+            }
+          />
+          <Route
+            path="/expense"
+            element={
+              <Expense
+                transactions={transactions}
+                addTransaction={addTransaction}
+                editTransaction={editTransaction}
+                deleteTransaction={deleteTransaction}
+                refreshTransactions={refreshTransactions}
+              />
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <Profile
+                user={user}
+                onUpdateProfile={updateUserData}
+                onLogout={handleLogout}
+              />
+            }
+          />
+        </Route>
         <Route
           path="*"
           element={<Navigate to={user ? '/' : '/login'} replace />}

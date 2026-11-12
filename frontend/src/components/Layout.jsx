@@ -405,7 +405,7 @@ const Layout = ({ onLogout, user }) => {
                   <TrendingUp className="w-6 h-6 text-teal-500" />
                   Financial Overview
                   <span className="text-sm text-gray-500 font-normal">
-                    {/* {{}} */}
+                    {/* {{timeFrameLabel}} */}
                   </span>
                 </h3>
               </div>

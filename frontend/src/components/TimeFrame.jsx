@@ -39,3 +39,6 @@ const TimeFrameSelector = ({
 };
 
 export default TimeFrameSelector;
+
+// It shows the 3 boxes with the details
+// The Total Income, Average Income and Transactions

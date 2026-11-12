@@ -364,7 +364,7 @@ const Dashboard = () => {
     fetchDashboardOverview();
   }, []);
 
-  //Add, Edit or Delete
+  //Add, Edit or Delete Transactions
   const handleAddTransaction = async () => {
     if (!newTransaction.description || !newTransaction.amount) return;
 
