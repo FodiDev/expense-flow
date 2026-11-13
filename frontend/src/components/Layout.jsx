@@ -25,6 +25,7 @@ import { Activity } from 'react';
 import { useEffect } from 'react';
 import { useMemo } from 'react';
 import { Outlet } from 'react-router-dom';
+import axios from 'axios';
 
 const API_BASE = 'https://expense-flow-backend-8jp9.onrender.com/api';
 

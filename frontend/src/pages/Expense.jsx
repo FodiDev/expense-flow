@@ -109,14 +109,17 @@ const Expense = () => {
           headers: getAuthHeaders(),
           params: { range },
         });
-        const payload = res.data?.data ?? {};
-        setOverview({
-          totalExpense: payload.totalExpense ?? 0,
-          averageExpense: payload.averageExpense ?? 0,
-          numberOfTransactions: payload.numberOfTransactions ?? 0,
-          recentTransactions: payload.recentTransactions ?? [],
-          range: payload.range ?? range,
-        });
+
+        if (res.data?.success) {
+          const payload = res.data?.data ?? {};
+          setOverview({
+            totalExpense: payload.totalExpense ?? 0,
+            averageExpense: payload.averageExpense ?? 0,
+            numberOfTransactions: payload.numberOfTransactions ?? 0,
+            recentTransactions: payload.recentTransactions ?? [],
+            range: payload.range ?? range,
+          });
+        }
       } catch (err) {
         console.error('Failed to fetch expense overview:', err);
       }
