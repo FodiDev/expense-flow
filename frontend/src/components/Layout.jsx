@@ -7,6 +7,8 @@ import {
   ArrowDown,
   ArrowUp,
   Car,
+  ChevronDown,
+  ChevronUp,
   Clock,
   CreditCard,
   DollarSign,
