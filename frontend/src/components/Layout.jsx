@@ -13,6 +13,7 @@ import {
   Gift,
   Home,
   Info,
+  PieChart,
   PiggyBank,
   RefreshCw,
   ShoppingCart,
