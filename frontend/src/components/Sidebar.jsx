@@ -11,6 +11,7 @@ import {
   LogOut,
   Menu,
   User,
+  X,
 } from 'lucide-react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
