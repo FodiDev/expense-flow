@@ -9,6 +9,7 @@ import {
   HelpCircle,
   Home,
   LogOut,
+  Menu,
   User,
 } from 'lucide-react';
 import { useEffect } from 'react';
