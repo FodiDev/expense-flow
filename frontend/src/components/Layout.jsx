@@ -4,19 +4,26 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import { useState } from 'react';
 import {
+  ArrowDown,
   ArrowUp,
   Car,
+  Clock,
   CreditCard,
+  DollarSign,
   Gift,
   Home,
+  Info,
   PiggyBank,
+  RefreshCw,
   ShoppingCart,
+  TrendingUp,
   Utensils,
   Zap,
 } from 'lucide-react';
 import { Activity } from 'react';
 import { useEffect } from 'react';
 import { useMemo } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const API_BASE = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
