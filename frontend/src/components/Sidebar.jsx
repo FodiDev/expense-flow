@@ -1,6 +1,6 @@
 import React from 'react';
 import { sidebarStyles, cn } from '../assets/dummyStyles';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import {
