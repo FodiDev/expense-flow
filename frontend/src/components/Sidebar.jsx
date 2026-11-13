@@ -12,6 +12,7 @@ import {
   User,
 } from 'lucide-react';
 import { useEffect } from 'react';
+import { useRef } from 'react';
 
 const MENU_ITEMS = [
   { text: 'Dashboard', path: '/', icon: <Home size={20} /> },
