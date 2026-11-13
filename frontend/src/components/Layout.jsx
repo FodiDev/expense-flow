@@ -15,6 +15,8 @@ import {
   Zap,
 } from 'lucide-react';
 import { Activity } from 'react';
+import { useEffect } from 'react';
+import { useMemo } from 'react';
 
 const API_BASE = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
