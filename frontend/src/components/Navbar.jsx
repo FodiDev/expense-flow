@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronDown, LogOut, User } from 'lucide-react';
+import { useEffect } from 'react';
 
 const BASE_URL = 'https://expense-flow-backend-8jp9.onrender.com/api';
 
