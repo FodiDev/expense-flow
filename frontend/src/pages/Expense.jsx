@@ -442,7 +442,7 @@ const Expense = () => {
             </div>
           }
           label="Total Expenses"
-          value={`$${totalExpense.toLocaleString()}`}
+          value={`R${totalExpense.toLocaleString()}`}
           additionalContent={
             <div className="mt-2 text-xs text-gray-500 flex items-center">
               <Calendar className="w-3 h-3 mr-1" /> {timeFrameRange.label}
@@ -458,7 +458,7 @@ const Expense = () => {
             </div>
           }
           label="Average Expense"
-          value={`$${averageExpense.toLocaleString()}`}
+          value={`R${averageExpense.toLocaleString()}`}
           additionalContent={
             <div className="mt-2 text-xs text-gray-500 flex items-center">
               <Calendar className="w-3 h-3 mr-1" />{' '}
@@ -541,11 +541,11 @@ const Expense = () => {
                 tickLine={false}
                 tick={{ fill: '#6b7280', fontSize: 12 }}
                 width={60}
-                tickFormatter={(value) => `$${value.toLocaleString()}`}
+                tickFormatter={(value) => `R${value.toLocaleString()}`}
               />
               <Tooltip
                 formatter={(value) => [
-                  `$${Math.round(value).toLocaleString()}`,
+                  `R${Math.round(value).toLocaleString()}`,
                   'Expense',
                 ]}
                 contentStyle={styles.tooltipContent}
